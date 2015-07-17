@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ShortGuidGenerator")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Short GUID Generator")]
+[assembly: AssemblyDescription("A tool capable of generating short GUIDs.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ShortGuidGenerator")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCompany("Fantastic Fiasco")]
+[assembly: AssemblyProduct("Short GUID Generator")]
+[assembly: AssemblyCopyright("Copyright © 2015 Fantastic Fiasco")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
