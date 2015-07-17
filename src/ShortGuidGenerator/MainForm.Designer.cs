@@ -32,9 +32,9 @@
             this.buttonNewGuid = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.groupBoxFormat = new System.Windows.Forms.GroupBox();
-            this.labelDescription = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.labelDescription = new System.Windows.Forms.Label();
             this.groupBoxFormat.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +67,7 @@
             this.buttonExit.TabIndex = 0;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // groupBoxFormat
             // 
@@ -81,15 +82,16 @@
             this.groupBoxFormat.TabStop = false;
             this.groupBoxFormat.Text = "GUID Format";
             // 
-            // labelDescription
+            // radioButton2
             // 
-            this.labelDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelDescription.Location = new System.Drawing.Point(12, 12);
-            this.labelDescription.Name = "labelDescription";
-            this.labelDescription.Size = new System.Drawing.Size(264, 81);
-            this.labelDescription.TabIndex = 2;
-            this.labelDescription.Text = "TODO";
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(6, 42);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(56, 17);
+            this.radioButton2.TabIndex = 0;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "TODO";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
             // 
@@ -102,21 +104,21 @@
             this.radioButton1.Text = "TODO";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // labelDescription
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 42);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(56, 17);
-            this.radioButton2.TabIndex = 0;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "TODO";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.labelDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDescription.Location = new System.Drawing.Point(12, 12);
+            this.labelDescription.Name = "labelDescription";
+            this.labelDescription.Size = new System.Drawing.Size(264, 81);
+            this.labelDescription.TabIndex = 2;
+            this.labelDescription.Text = "TODO";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.buttonExit;
             this.ClientSize = new System.Drawing.Size(369, 359);
             this.Controls.Add(this.labelDescription);
             this.Controls.Add(this.groupBoxFormat);

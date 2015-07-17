@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace ShortGuidGenerator
 {
@@ -7,6 +8,11 @@ namespace ShortGuidGenerator
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
