@@ -46,6 +46,7 @@
             this.buttonCopy.TabIndex = 0;
             this.buttonCopy.Text = "Copy";
             this.buttonCopy.UseVisualStyleBackColor = true;
+            this.buttonCopy.Click += new System.EventHandler(this.buttonCopy_Click);
             // 
             // buttonNewGuid
             // 

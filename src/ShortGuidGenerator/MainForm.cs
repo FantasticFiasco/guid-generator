@@ -12,6 +12,11 @@ namespace ShortGuidGenerator
             GenerateNewShortGuid();
         }
 
+        private void buttonCopy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(labelResult.Text);
+        }
+
         private void buttonNewGuid_Click(object sender, EventArgs e)
         {
             GenerateNewShortGuid();
