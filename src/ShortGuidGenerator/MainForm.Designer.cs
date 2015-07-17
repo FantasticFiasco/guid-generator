@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.buttonCopy = new System.Windows.Forms.Button();
             this.buttonNewGuid = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.groupBoxResult = new System.Windows.Forms.GroupBox();
-            this.labelDescription = new System.Windows.Forms.Label();
             this.labelResult = new System.Windows.Forms.Label();
+            this.labelDescription = new System.Windows.Forms.Label();
             this.groupBoxResult.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +85,15 @@
             this.groupBoxResult.TabStop = false;
             this.groupBoxResult.Text = "Result";
             // 
+            // labelResult
+            // 
+            this.labelResult.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelResult.Location = new System.Drawing.Point(6, 20);
+            this.labelResult.Name = "labelResult";
+            this.labelResult.Size = new System.Drawing.Size(252, 13);
+            this.labelResult.TabIndex = 0;
+            // 
             // labelDescription
             // 
             this.labelDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -94,15 +104,6 @@
             this.labelDescription.TabIndex = 2;
             this.labelDescription.Text = "Select \"Copy\" to copy the result to the clipboard (the result can then be pasted " +
     "into your source code). Choose \"Exit\" when done.";
-            // 
-            // labelResult
-            // 
-            this.labelResult.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelResult.Location = new System.Drawing.Point(6, 20);
-            this.labelResult.Name = "labelResult";
-            this.labelResult.Size = new System.Drawing.Size(252, 13);
-            this.labelResult.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -116,6 +117,7 @@
             this.Controls.Add(this.buttonCopy);
             this.Controls.Add(this.labelDescription);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
