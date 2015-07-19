@@ -1,7 +1,12 @@
-# Short GUID Generator
+# GUID Generator
 
-This is a small utility tool complementing the _Create GUID_ tool found in Visual Studio.
+This tool is a replacement for the _GUID Generator_ (guidgen.exe) shipped with Visual Studio, and can generate additional GUID formats.
 
+![Application snapshot](design/ApplicationSnapshot.png)
+
+## Additional Formats
+
+### Short GUID
 Instead of displaying the GUID as a hexadecimal value, the GUID is ASCII encoded into a smaller string due to the higher data density of ASCII.
 
 The GUID in hexadecimal format:
@@ -13,6 +18,4 @@ would after encoding be:
 `00amyWGct0y_ze4lIsj2Mw`
 
 
-The encoding code is based on Mads Kristensen's [blog post](http://madskristensen.net/post/a-shorter-and-url-friendly-guid).
-
-![Application snapshot](design/ApplicationSnapshot.png)
+The code is based on Mads Kristensen's [blog post](http://madskristensen.net/post/a-shorter-and-url-friendly-guid).
