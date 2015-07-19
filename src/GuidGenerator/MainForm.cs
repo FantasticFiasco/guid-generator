@@ -2,7 +2,7 @@
 using System.Text;
 using System.Windows.Forms;
 
-namespace ShortGuidGenerator
+namespace GuidGenerator
 {
     public partial class MainForm : Form
     {
@@ -12,7 +12,7 @@ namespace ShortGuidGenerator
         {
             InitializeComponent();
 
-            GenerateNewShortGuid();
+            GenerateNewGuid();
         }
 
         #region Event Handlers
@@ -24,7 +24,7 @@ namespace ShortGuidGenerator
 
         private void buttonNewGuid_Click(object sender, EventArgs e)
         {
-            GenerateNewShortGuid();
+            GenerateNewGuid();
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace ShortGuidGenerator
             Clipboard.SetText(labelResult.Text);
         }
 
-        private void GenerateNewShortGuid()
+        private void GenerateNewGuid()
         {
             guid = Guid.NewGuid();
             UpdateResult();

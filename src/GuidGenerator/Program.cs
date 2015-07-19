@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace ShortGuidGenerator
+namespace GuidGenerator
 {
     static class Program
     {

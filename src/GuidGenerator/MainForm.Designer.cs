@@ -1,4 +1,4 @@
-﻿namespace ShortGuidGenerator
+﻿namespace GuidGenerator
 {
     partial class MainForm
     {
