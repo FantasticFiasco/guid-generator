@@ -58,31 +58,31 @@ namespace GuidGenerator
 
             if (radioButtonOleCreateFormat.Checked)
             {
-                result = GuidFormats.OleCreateFormat(guid);
+                result = GuidFormats.OleCreate(guid);
             }
             else if (radioButtonDefineFormat.Checked)
             {
-                result = GuidFormats.DefineFormat(guid);
+                result = GuidFormats.Define(guid);
             }
             else if (radioButtonConstFormat.Checked)
             {
-                result = GuidFormats.ConstFormat(guid);
+                result = GuidFormats.Const(guid);
             }
             else if (radioButtonRegistryFormat.Checked)
             {
-                result = GuidFormats.RegistryFormat(guid);
+                result = GuidFormats.Registry(guid);
             }
             else if (radioButtonAttributeFormat.Checked)
             {
-                result = GuidFormats.AttributeFormat(guid);
+                result = GuidFormats.Attribute(guid);
             }
             else if (radioButtonTagFormat.Checked)
             {
-                result = GuidFormats.TagFormat(guid);
+                result = GuidFormats.Tag(guid);
             }
             else if (radioButtonShortFormat.Checked)
             {
-                result = GuidFormats.ShortFormat(guid);
+                result = GuidFormats.Short(guid);
             }
             else
             {

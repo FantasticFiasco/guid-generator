@@ -5,7 +5,7 @@ namespace GuidGenerator
 {
     public static class GuidFormats
     {
-        public static string OleCreateFormat(Guid guid)
+        public static string OleCreate(Guid guid)
         {
             var stringBuilder = new StringBuilder();
             stringBuilder.AppendFormat("// {{{0}}}{1}", guid.ToString().ToUpper(), Environment.NewLine);
@@ -15,7 +15,7 @@ namespace GuidGenerator
             return stringBuilder.ToString();
         }
 
-        public static string DefineFormat(Guid guid)
+        public static string Define(Guid guid)
         {
             var stringBuilder = new StringBuilder();
             stringBuilder.AppendFormat("// {{{0}}}{1}", guid.ToString().ToUpper(), Environment.NewLine);
@@ -25,7 +25,7 @@ namespace GuidGenerator
             return stringBuilder.ToString();
         }
 
-        public static string ConstFormat(Guid guid)
+        public static string Const(Guid guid)
         {
             var stringBuilder = new StringBuilder();
             stringBuilder.AppendFormat("// {{{0}}}{1}", guid.ToString().ToUpper(), Environment.NewLine);
@@ -49,22 +49,22 @@ namespace GuidGenerator
             return stringBuilder.ToString();
         }
 
-        public static string RegistryFormat(Guid guid)
+        public static string Registry(Guid guid)
         {
             return string.Format("{{{0}}}", guid.ToString().ToUpper());
         }
         
-        public static string AttributeFormat(Guid guid)
+        public static string Attribute(Guid guid)
         {
             return string.Format("[Guid(\"{0}\")]", guid.ToString().ToUpper());
         }
 
-        public static string TagFormat(Guid guid)
+        public static string Tag(Guid guid)
         {
             return string.Format("<Guid(\"{0}\")>", guid.ToString().ToUpper());
         }
         
-        public static string ShortFormat(Guid guid)
+        public static string Short(Guid guid)
         {
             // This code is copied from Mads Kristensen's blog at
             // http://madskristensen.net/post/a-shorter-and-url-friendly-guid
@@ -75,11 +75,11 @@ namespace GuidGenerator
 
             return encodedGuid.Substring(0, 22);
         }
-        
+
         private static string[] SplitHex(Guid guid)
         {
             string[] parts = guid.ToString().Split('-');
-            return new[]
+            string [] hexParts =
             {
                 string.Format("0x{0}", parts[0]),
                 string.Format("0x{0}", parts[1]),
@@ -93,6 +93,13 @@ namespace GuidGenerator
                 string.Format("0x{0}", parts[4].Substring(8, 2)),
                 string.Format("0x{0}", parts[4].Substring(10, 2))
             };
+
+            for (int i = 0; i < hexParts.Length; i++)
+            {
+                hexParts[i] = hexParts[i].Replace("0x0", "0x");
+            }
+
+            return hexParts;
         }
     }
 }
