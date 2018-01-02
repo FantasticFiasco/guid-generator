@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Short GUID Generator")]
 [assembly: AssemblyDescription("A tool capable of generating short GUIDs.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Fantastic Fiasco")]
+[assembly: AssemblyCompany("FantasticFiasco")]
 [assembly: AssemblyProduct("Short GUID Generator")]
-[assembly: AssemblyCopyright("Copyright © 2015 Fantastic Fiasco")]
+[assembly: AssemblyCopyright("Copyright © 2015-2018 Mattias Kindborg")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
