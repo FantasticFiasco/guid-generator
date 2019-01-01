@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("FantasticFiasco")]
 [assembly: AssemblyProduct("Short GUID Generator")]
-[assembly: AssemblyCopyright("Copyright © 2015-2018 Mattias Kindborg")]
+[assembly: AssemblyCopyright("Copyright © 2015-2019 Mattias Kindborg")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
